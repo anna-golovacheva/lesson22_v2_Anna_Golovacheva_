@@ -2,7 +2,7 @@
 Для начала работы скопируйте репозиторий на локальную машину:
 c помощью команды в терминале
 
-`https://github.com/skypro-008/lesson22-and-tests.git`
+`https://github.com/skypro-008/lesson22-v2.git`
 
 Откройте склонированный репозиторий в PyCharm.
 
