@@ -1,6 +1,8 @@
-# Где-то тут закрался класс который никто не использует. 
-# Есть мнение, что он зря тратит чернила монитора. Удалите его
+# Один из классов не делает совсем ничего,
+# просто переадресует вызовы к другому классу.
+# Удалите этот класс и перенаправьте вызовы напрямую.
 
+# РЕШЕНИЕ:
 class Unit:
     def __init__(self):
         self.x = 0
@@ -15,12 +17,6 @@ class Unit:
     def move(self, field):
         field.set_unit(x=self.x, y=self.y, unit=self)
 
-class GameItem():
-    def __init__(self, name: str):
-        self.name = name
-
-    def step_on(self, unit: Unit):
-        pass
 
 class Field:
     def set_unit(self, x, y, unit: Unit):
@@ -31,6 +27,3 @@ class Main:
         self.field = Field()
         self.unit = Unit()
         self.unit.move(field=self.field)
-
-if __name__ == "__main__":
-    main = Main()
